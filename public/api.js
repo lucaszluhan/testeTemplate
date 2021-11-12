@@ -3,6 +3,7 @@ const api = axios.create({ baseURL: 'https://api-growdevers-lucaszluhan.herokuap
 api.get('/')
    .then((result) => {
       console.log(result.data.data);
+      document.querySelector('#lista').innerHTML = `ola`;
    })
    .catch((err) => {
       console.log('erro');
